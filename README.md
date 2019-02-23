@@ -1,5 +1,7 @@
 # Introduction to Ruby
 
+![](images/ruby.gif)
+
 ## Lesson Objectives
 
 - [Installing Ruby](install-ruby.md)
@@ -18,10 +20,9 @@
 
 ## Introduction
 
-![](images/ruby.gif)
+![](images/rubys-not-a-girl.jpg)
 
-Ruby is a server-side language. It was designed and developed in 1995 by [Yukihiro "Matz" 
-Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) in Japan.
+Ruby is a server-side language. It was designed and developed in 1995 by [Yukihiro "Matz" Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) in Japan.
 
 His philosophy in building Ruby was not about simplicity, but making programming in Ruby feel natural in a way that mirrors life.
 
@@ -165,25 +166,6 @@ $ ruby app.rb
 # => How old are you?:
 ```
 
-### Blocks
-
-Any code surrounded by curly braces is a block.
-
-```ruby
-2.times {
-  print "Hey!"
-}
-```
-
-With blocks, you can group a set of instructions together so that they can be passed around your program.
-
-The curly braces can also be traded for the words do and end, which is nice if your block is longer than one line.
-
-```ruby
-loop do
-  print "Hey!"
-end
-```
 
 ## Data Types
 
@@ -463,19 +445,6 @@ a
 # => "CHEESEBURGER"
 ```
 
-### Predicate Methods (?)
-
-This is similar to adding the bang to the end of a method. Predicate methods using `?` returns a boolean value.
-```ruby
-  5.odd?
-  # true
-  5.even?
-  # false
-  something = "A thing"
-  # => "A thing"
-  something.nil?
-  # => false
-```
 ### Symbols
 
 Symbols are immutable, constant values. That means they contain the same value through the entirety of a program and cannot be changed.
@@ -760,8 +729,27 @@ Normally, only two dots are used. If a third dot is used, the last value in the 
 ```(0...5)``` represents the numbers 0 through 4.
 
 ## Data Collection Exercise - Lab / Homework (30 minutes)
-Complete the exercises on [this repo](data-collections-exercises.md).
+Complete the exercises in [this document](data-collections-exercises.md).
 
+## Blocks
+
+Any code surrounded by curly braces is a block.
+
+```ruby
+2.times {
+  print "Hey!"
+}
+```
+
+With blocks, you can group a set of instructions together so that they can be passed around your program.
+
+The curly braces can also be traded for the words do and end, which is nice if your block is longer than one line.
+
+```ruby
+loop do
+  print "Hey!"
+end
+```
 
 ## Loops
 
@@ -901,7 +889,6 @@ end
 ```
 > [**Further Reading on Ruby loops**](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
 
-------------
 
 ### Exercise: Practice Each (15 minutes)
 
@@ -1102,14 +1089,14 @@ Lets think back to the behaviors of arguments in JS.  Remember how lenient it is
 
 In Ruby, if you specify a number of arguments, the function must take that number of arguments. No more, No less. 
 
-#### Less
+### Less
 ```ruby
 $ hello("Jamie", "Hark", "frickin' cold eh")
 
 => ArgumentError: wrong number of arguments (given 3, expected 4)
 ```
 
-#### More
+### More
 ```ruby
 $ hello("Jamie", "Hark", "frickin' cold eh", ".", "Forsooth, ye yonder pilgrim is quite the bespoke son of a tailors daughter, ai?")
 
@@ -1120,7 +1107,7 @@ SIDENOTE: Ruby's errors are amazing. Use them!
 
 There are some fun ways to play with arguments and define further behavior:
 
-#### Default arguments
+### Default arguments
 
 ```ruby
 def drink_milk(thirsty = true)
@@ -1130,7 +1117,7 @@ def drink_milk(thirsty = true)
 end
 ```
 
-#### Woah, that return statement?
+### Woah, that return statement?
 
 In Ruby, returns are implicit by design. Ruby will always assume that the last line of the method will be returned. So why the first return?
 
@@ -1156,7 +1143,7 @@ def api_call(err, data)
 end
 ```
 
-#### Everything is an Expression
+### Everything is an Expression
 
 ```ruby
 def add(a, b)
@@ -1170,6 +1157,20 @@ add(1, 2, 3)
 ```
 
 Notice we do not need the keyword ```return```. The last line hit by the method will always be the return value. This is called an implicit return.
+
+### Predicate Methods (?)
+
+This is similar to adding the bang to the end of a method. Predicate methods using `?` returns a boolean value.
+```ruby
+  5.odd?
+  # true
+  5.even?
+  # false
+  something = "A thing"
+  # => "A thing"
+  something.nil?
+  # => false
+```
 
 ## Ruby Code Style Guide
 
