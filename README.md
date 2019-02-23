@@ -840,7 +840,7 @@ end
 # > the value of c is 3
 ```
 
-### Other types of Loops in Ruby
+### Exercise: Other types of Loops in Ruby (30 minutes)
 
 #### [while](https://ruby-doc.org/core-2.6.1/doc/syntax/control_expressions_rdoc.html#label-while+Loop)
 
