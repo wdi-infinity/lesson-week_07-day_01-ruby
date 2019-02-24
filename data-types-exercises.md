@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+4
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: 16
 ```
 
 ### Conditionals
