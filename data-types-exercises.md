@@ -12,6 +12,7 @@
 ```text
 Your answer.
 ```
+the answre is 8 , because it dublecate it triple .
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
@@ -19,21 +20,23 @@ Your answer.
 ```text
 Your answer.
 ```
-
+the answre is 144 , because (16 / 4) = 4 , (2 + 1) = 3 , 4+3=12 , 
+then 12 **2 = 144 .
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
 Your answer.
 ```
-
+"a milli a millia milli a millia milli a milli"
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
 Your answer.
 ```
-
+the answre should be a milli a milli a milli a milli,
+but when divided by 2 we can't do that because it strig and number
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
@@ -41,7 +44,7 @@ puts "My favorite number is: " + my_favorite_number
 ```text
 Your answer.
 ```
-
+error type because string can not multiply with integer
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
@@ -49,20 +52,20 @@ puts "My favorite number is: #{my_favorite_number}"
 ```text
 Your answer.
 ```
-
+My favorite number is: 13
 ### Truthiness and Falsiness
 
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[*] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
-[ ] undefined
+[*] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -80,7 +83,7 @@ end
 ```text
 Your answer.
 ```
-
+My name is: 
 ```rb
 no_name = nil
 if no_name
@@ -90,7 +93,7 @@ end
 ```text
 Your answer.
 ```
-
+nil
 ```rb
 age = 21
 if age
@@ -100,7 +103,7 @@ end
 ```text
 Your answer.
 ```
-
+the answre undefined or nil because no_name is string and the condition is integer.
 ```rb
 age = gets.chomp
 if age
@@ -110,7 +113,8 @@ end
 ```text
 Your answer.
 ```
-
+the output will take from the user .
+My age is: 23
 ### Conditionals
 
 Write the code for the following exercise inside of the `app.rb` located in this repo. Run/test your code using `ruby app.rb` in the Terminal.
