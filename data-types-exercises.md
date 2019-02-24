@@ -10,28 +10,34 @@
 2 ** 3
 ```
 ```text
-Your answer.
+guess 8 BUZ 2 multiplay by 2 three times
+
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+guess 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
+
+guess print string 3 times
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+"Error out"
+
+guess "a milli a milli " BUZ it's not a number but the answer is "Error out"
 ```
 
 ```rb
@@ -39,7 +45,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+"Error out" 
+the answer is : puts "My favorite number is: " + my_favorite_number.to_s
 ```
 
 ```rb
@@ -47,7 +54,9 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
+guess 
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,13 +64,13 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
+[√] false
+[] 0
+[] ""
+[] null
 [ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
+[√] undefined
+[√] NaN
 [ ] nil
 ```
 
@@ -78,7 +87,8 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
+BUZ the vlue is empty
 ```
 
 ```rb
@@ -88,7 +98,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +108,10 @@ if age
 end
 ```
 ```text
-Your answer.
+Error BUZ the no_name is null
+or 
+My age is:  
+if the no_name is ""
 ```
 
 ```rb
@@ -108,7 +121,8 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is:
+depend on user what type
 ```
 
 ### Conditionals
@@ -136,8 +150,17 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
-  end
+    if i%3 == 0 && i%5 == 0
+    puts "FizzBuzz"
+    elsif i%3 == 0
+    puts "fizz"
+    elsif i%5 == 0
+    puts "Buzz"
+    else
+    puts i
+    end
+    i+=1  
+    end
   ```
 
 </details>
