@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8, 2 to the power 3.
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144, the value inside bracket squared.
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli amillia milli amillia milli amilli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Undefined, can't divide a string by a number.
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error, can't add a non-string number to a string.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: ., using the #{} doesn't display the number value.
 ```
 
 ### Truthiness and Falsiness
@@ -55,8 +55,8 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[T] false
+[T] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: ., displays the scentence followed by an empty string.
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error, because no_name is undefined.
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: {age}, any input will pass the if ocndition.
 ```
 
 ### Conditionals
