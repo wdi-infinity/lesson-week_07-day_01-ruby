@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+Your answer is : 8 beacuse 2*2*2
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+Your answer is : 144 
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+Your answer is : a milli a milli a milli a milli a milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Your answer : i think it shuld be error, how to multiply  string to integer
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Your answer is : My favorite number is: 13
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+Your answer is My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,7 +55,7 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[ ^] false
 [ ] 0
 [ ] ""
 [ ] null
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer: empity.. My name is :
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Your answer: the answer is nill with no "My name is"
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer: empity ,,, my age is : becuase its not undefind
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Your answer: it will let user to enter the the age value and it will print the value
 ```
 
 ### Conditionals
