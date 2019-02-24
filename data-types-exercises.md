@@ -9,45 +9,44 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+```
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+```
+"Error out"
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+```rb
+"Error out"
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
-```text
-Your answer.
+```My favorite number is: 13 
 ```
 
 ### Truthiness and Falsiness
@@ -55,7 +54,7 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[*] false
 [ ] 0
 [ ] ""
 [ ] null
@@ -77,8 +76,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+My name is: 
 ```
 
 ```rb
@@ -87,8 +86,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+nil
 ```
 
 ```rb
@@ -97,8 +96,8 @@ if age
   puts "My age is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+"Error out"
 ```
 
 ```rb
@@ -107,8 +106,8 @@ if age
   puts "My age is: " + age
 end
 ```
-```text
-Your answer.
+```
+"Error out"
 ```
 
 ### Conditionals
@@ -133,10 +132,18 @@ Your output should look something like this...
 <details>
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
-  ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
+  ```rb    
+i = 1
+while i <= 100
+    if i%3!=0 && i%5!=0
+ puts"#{i}"
+    elsif i%3==0 && i%5==0
+        puts"FizzBuzz"
+    elsif i%3==0
+        puts"Fizz"
+    elsif i%5==0
+        puts"Buzz"
+ 
   end
   ```
 
