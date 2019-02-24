@@ -9,37 +9,38 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```multiplay two three times 
 ```
+answer: 8
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```((4)*(3))**2 --> (12)**2--> 12*2 * 12*2
+answer:144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+``` ("a milli " + "a milli") *3--> it will print three time 
+
+answer: a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+``` string /number
+Error
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+``` 
+My favorite number is: 13
 ```
 
 ```rb
@@ -47,7 +48,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +56,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[*] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -77,8 +78,9 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+# it will be like --> if true then print null (nil)
+My name is: nil
 ```
 
 ```rb
@@ -87,8 +89,9 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+#if no_name --> it will be false the output nothing
+answer: nil
 ```
 
 ```rb
@@ -97,8 +100,9 @@ if age
   puts "My age is: " + no_name
 end
 ```
-```text
-Your answer.
+```rb
+#if age always is true
+My age is: 21
 ```
 
 ```rb
@@ -107,8 +111,10 @@ if age
   puts "My age is: " + age
 end
 ```
-```text
-Your answer.
+```rb
+# age = gets.chomp get the user input
+
+answer: My age is: user input
 ```
 
 ### Conditionals
@@ -133,7 +139,9 @@ Your output should look something like this...
 <details>
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
+
   ```rb
+  # the answer in app.rb
   i = 1
   while i <= 100
     # Your code goes in here.
