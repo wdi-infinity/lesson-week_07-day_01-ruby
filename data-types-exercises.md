@@ -8,20 +8,24 @@
 
 ```rb
 2 ** 3
-```
-```text
-Your answer.
+
+it's actully 2^3
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```
+==>(4*3) **2 => 12**2 => 144
+144
+
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
+
+=> "a milli a millia milli a millia milli a milli"
 ```
 ```text
 Your answer.
@@ -30,16 +34,28 @@ Your answer.
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+
+NoMethodError: undefined method `/' for "a milli a milli a milli a milli ":String.
+
+I think becuse we use '\'with string 
 ```
 
-```rb
+
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+```need to convert it to string (not sure)
+
+output
+TypeError: no implicit conversion of Integer into String
+from (pry):30:in `+'
+
+TRYING TO FIX IT 
+[41] pry(main)> puts "My favorite number is: " + #{my_favorite_number}
+[41] pry(main)* 3
+TypeError: no implicit conversion of Integer into String
+from (pry):37:in `+'
+
 ```
 
 ```rb
@@ -55,13 +71,13 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
+[ false] false
+[ false] 0
+[false ] ""
+[false ] null
 [ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
+[ false] undefined
+[ false] NaN
 [ ] nil
 ```
 
@@ -77,18 +93,15 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
-```
-
+My name is: 
 ```rb
+
 no_name = nil
 if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+
 ```
 
 ```rb
@@ -97,8 +110,9 @@ if age
   puts "My age is: " + no_name
 end
 ```
-```text
-Your answer.
+```
+My age is: 
+nil
 ```
 
 ```rb
