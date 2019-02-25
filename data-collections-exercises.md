@@ -83,7 +83,8 @@ ninja_turtle[:age] = 82947
 Remove the `radical` key-value pair from `ninja_turtle`.
 
 ```rb
-# ninja_turtle.delete[2]
+# ninja_turtle.delete[2] which did not work 
+
 ```
 
 Add a key `pizza_toppings` to `ninja_turtle`. Set it to an array of strings (e.g., `["cheese", "pepperoni", "peppers"]`).

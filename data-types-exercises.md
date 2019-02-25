@@ -11,7 +11,7 @@
 ```
 ```text
 222
-// After testing this, I relize ** mens 2 * 2 3 times 
+// After testing this, I relized ** means 2 * 2 3 times 
 
 ```
 
@@ -143,10 +143,20 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+   counts = 1
+while counts <= 100
+if counts%3 == 0 && counts%5 == 0
+    puts "FizzBuzz"
+elsif counts%3 == 0
+    puts "fizz"
+elsif counts%5 == 0
+    puts "Buzz"
+else
+    puts counts
+end
+counts+=1
+end
+
   ```
 
 </details>
