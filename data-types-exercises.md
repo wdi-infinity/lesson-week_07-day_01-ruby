@@ -10,44 +10,44 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
-
+becuase ** is for exponent----
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
-
+because it concating strings first then multiply them by 3-----
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error
 ```
-
+can't divide a string
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error
 ```
-
+can't add int to a string
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[X] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[X] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My Name is: 
 ```
 
 ```rb
@@ -88,8 +88,9 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nothing
 ```
+because nil is a false -----
 
 ```rb
 age = 21
@@ -98,9 +99,9 @@ if age
 end
 ```
 ```text
-Your answer.
+error
 ```
-
+because no_name is not defined
 ```rb
 age = gets.chomp
 if age
@@ -108,9 +109,9 @@ if age
 end
 ```
 ```text
-Your answer.
+error
 ```
-
+ 
 ### Conditionals
 
 Write the code for the following exercise inside of the `app.rb` located in this repo. Run/test your code using `ruby app.rb` in the Terminal.
@@ -134,10 +135,19 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+ i = 0
+while i <= 100
+    i += 1
+    if i%3 == 0 && i%5 ==0
+        puts'FizzBuzz'
+    elsif i%3 == 0
+        puts 'Fizz'
+    elsif i%5 == 0
+        puts 'Buzz'
+    else
+        puts i
+    end
+end
   ```
 
 </details>
