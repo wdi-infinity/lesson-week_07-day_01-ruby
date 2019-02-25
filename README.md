@@ -69,7 +69,7 @@ exit unless "restaurant".include? "aura"
 ```
 
 ```ruby
-['toast', 'cheese', 'wine'].each { |food| print food.capitalize  }
+['toast', 'cheese', 'cola'].each { |food| print food.capitalize  }
 ```
 
 ```ruby
