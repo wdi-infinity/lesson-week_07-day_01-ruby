@@ -100,5 +100,5 @@ Produce an array containing all of `ninja_turtle`'s keys using a method. [The Ru
 Print out each key-value pair in the following format - "KEY's is equal to VALUE" -- using a method. [The Ruby documentation might help](http://ruby-doc.org/core-1.9.3/Hash.html).
 
 ```rb
-# ninja_turtle , by call the hash object 
+# ninja_turtle.keys , by call the hash object 
 ```
