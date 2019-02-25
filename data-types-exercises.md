@@ -10,20 +10,20 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
+"a milli a millia milli a millia milli a milli"
 Your answer.
 ```
 
@@ -31,7 +31,7 @@ Your answer.
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+no implicit conversion of Integer into String.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -62,7 +62,7 @@ Your answer.
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+nil.
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ### Conditionals
@@ -136,7 +136,7 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
+    
   end
   ```
 
