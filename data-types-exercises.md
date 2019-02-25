@@ -10,36 +10,41 @@
 2 ** 3
 ```
 ```text
-Your answer.
+222
+// After testing this, I relize ** mens 2 * 2 3 times 
+
 ```
 
 ```rb
-((16 / 4) * (2 + 1)) ** 2
+((16 / 4 ) * (2 + 1 )) ** 2
 ```
 ```text
-Your answer.
+ 12 * 12 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a millia millia millia millia millia milli"
+
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+ error
+
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+```text 
+Error .  
+Correct Answer => "My favorite number is: #{my_favorite_number}"
 ```
 
 ```rb
@@ -47,7 +52,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13 
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +60,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[X] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[X] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -71,14 +76,15 @@ Your answer.
 * "Error out" is a valid answer choice.
 * Also include a sentence on why you chose your answer.
 
-```rb
+```rb 
+# Question
 no_name = ""
 if no_name
   puts "My name is: " + no_name
 end
 ```
 ```text
-Your answer.
+My name is 
 ```
 
 ```rb
@@ -88,7 +94,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+Error
 ```
 
 ```rb
@@ -98,7 +104,9 @@ if age
 end
 ```
 ```text
-Your answer.
+no_name was defined as empty string previously 
+My age is 
+
 ```
 
 ```rb
@@ -108,7 +116,8 @@ if age
 end
 ```
 ```text
-Your answer.
+gets let the user enter a vlaue chomp removes /n
+My age is 10 
 ```
 
 ### Conditionals
