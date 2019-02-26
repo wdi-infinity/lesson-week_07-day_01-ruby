@@ -9,52 +9,51 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
-```
+```the reason for this is two is multiply by 2 three times .
+puts (8)
 
-```rb
-((16 / 4) * (2 + 1)) ** 2
-```
-```text
-Your answer.
-```
 
-```rb
+puts ((16 / 4) * (2 + 1)) ** 2
+144
+
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+(a milli amilli amilli)
 ```
 
 ```rb
 ("a milli " * 4) / 2
-```
-```text
-Your answer.
-```
+
+show us undefined due we could not divide string by number .
+a milli 
+a milli
+a milli 
+a milli 
+
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
+'My favorite number is:' + 13.to_i
 ```
-```text
-Your answer.
-```
-
+show error due implicit converion of integer into string 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
-```text
-Your answer.
+output : My favorite number is : 13 
+due the
+
 ```
 
 ### Truthiness and Falsiness
 
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
-```text
+```
+only []false and [] nill are evaluate to false .
+
 [ ] false
 [ ] 0
 [ ] ""
@@ -77,8 +76,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+```will return undefined value due the varible value is empty .
+
 ```
 
 ```rb
@@ -87,8 +86,8 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
-```text
-Your answer.
+the result show nil due we concatiante string with nil value .
+ my name is : #{no_name}
 ```
 
 ```rb
@@ -98,7 +97,8 @@ if age
 end
 ```
 ```text
-Your answer.
+my age is : #{age}
+my age is : 21
 ```
 
 ```rb
@@ -125,7 +125,7 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 * If the number is divisible by both 3 and 5, print `"FizzBuzz"`.
 * If the number does not meet any of the above conditions, just print the number.
 
-Your output should look something like this...
+Your output should look something like this..
 ```
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
@@ -134,10 +134,6 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
   ```
 
 </details>
